@@ -1,15 +1,17 @@
-import Sidebar from '@/components/Sidebar'
-import type { Metadata } from 'next'
 import { Figtree } from 'next/font/google'
-import './globals.css'
-import SupabaseProvider from '@/providers/SupabaseProviders'
-import UserProvider from '@/providers/UserProvider'
-import ModalProvider from '@/providers/ModaProvider'
+
+import Sidebar from '@/components/Sidebar'
 import ToasterProvider from '@/providers/ToasterProvider'
+import UserProvider from '@/providers/UserProvider'
+import ModalProvider from '@/providers/ModalProvider'
+import SupabaseProvider from '@/providers/SupabaseProvider'
+
+import './globals.css'
+
 
 const font = Figtree({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Spotify Clone',
   description: 'Listen to music!',
 }
